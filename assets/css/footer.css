@@ -1,0 +1,31 @@
+footer {
+  position: relative;
+  background-color: #252636;
+  padding: 40px 0 200px 0;
+  width: 100vw;
+}
+
+footer div div div {
+  color: #ffffff;
+}
+
+footer div div div h3 {
+  padding-top: 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #e0e0e0;
+}
+
+footer .copyright span {
+  color: #252636;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,600,700,800,900&display=swap");
+main {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+main h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+main h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+main .figure-rounded {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: #BF843B;
+}
+
+main .figure-rounded img {
+  width: 60%;
+}
+/*# sourceMappingURL=content.css.map */

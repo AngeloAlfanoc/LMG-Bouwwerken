@@ -1,0 +1,162 @@
+@import './variables.scss';
+
+.mast-head {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    .header-controls{
+        position: absolute;
+        left:0px;
+        width: 99.1vw;
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        div{
+            position: relative;
+            z-index: 3;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:40px;
+            height: 40px;
+            opacity: .9;
+            background-color: $color-type-1;
+            color:white;
+            box-shadow: 0px 3px 5px -3px #000000bf;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .dotdotdot-control{
+        z-index: 11;
+        position: absolute;
+        left:0px;
+        width: 99.1vw;
+        height:25px;
+        display: flex;
+        align-self: flex-end;
+        justify-content: center;
+        div{
+            margin: 0 5px;
+            border-radius: 50%;
+            border: 2px solid $color-white;
+            width:15px;
+            height:15px;
+            margin-bottom: 5px;
+            &:hover{
+                background-color: $color-white;
+                cursor: pointer;
+                transition: all 150ms;
+            }
+        }
+        .activeCar{
+            background-color: $color-white;
+        }
+    }
+    .outer-head {
+        opacity: 1;
+        z-index: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        width: 100vw;
+        height: 80vh;
+        animation: opacity  10s infinite alternate;
+    }
+
+    .outer-head:after{
+        content: ""; // ::before and ::after both require content
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-type-2;
+        opacity: .7;
+    }
+    .inner-head {
+        position: absolute;
+        bottom: 30%;
+        left: 12%;
+        background: #ffffffb9;
+        max-width: 1000px;
+        padding:2%;
+        max-height: 400px;
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+
+        span{ 
+            margin: 5px 0 0 20px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            position: absolute;
+            padding: 1% 0;
+            width:300px;
+            background-color: $color-type-1;
+           &:hover{
+                background-color: darken($color-type-1,2%);
+                cursor: pointer;
+            }
+            a{
+
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                background-color: #ffffff00;
+                padding: 1% 0;
+                font-weight: 700;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+        }
+    }
+    @keyframes opacity {
+        0% {
+          opacity: .1;
+          
+        }
+        5% {
+            opacity: 1;
+        }
+        95% {
+          opacity: 1;
+
+        }
+        100% {
+            opacity: .1;
+          }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .mast-head {
+        .header-controls{
+            display: none;
+        }
+        .inner-head{
+            left:0;
+            width:100%;
+            span{
+                left:0;
+                margin: 0;
+                width:150px;
+                margin-left:15px;
+                a{
+                    font-size: 1.2rem;
+                }
+            }
+            h1{
+                font-size: 1.9rem;
+            }
+        }
+    }
+  }

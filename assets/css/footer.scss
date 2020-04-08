@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+
+footer {
+    position: relative;
+    background-color: $color-type-1;
+    padding:40px 0 200px 0;
+    width: 100vw;
+    div {
+        div {
+            div {
+                color: $color-white;
+                h3{
+                    padding-top:30px;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .copyright {
+        margin-top: 20px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        padding: 20px 0;
+        background-color: darken($color-white, 12%);
+        span{
+            color: $color-type-1;
+        }
+    }
+}

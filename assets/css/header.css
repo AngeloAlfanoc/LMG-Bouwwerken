@@ -1,0 +1,212 @@
+.mast-head {
+  width: 100vw;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mast-head .header-controls {
+  position: absolute;
+  left: 0px;
+  width: 99.1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mast-head .header-controls div {
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  opacity: .9;
+  background-color: #252636;
+  color: white;
+  -webkit-box-shadow: 0px 3px 5px -3px #000000bf;
+          box-shadow: 0px 3px 5px -3px #000000bf;
+}
+
+.mast-head .header-controls div:hover {
+  cursor: pointer;
+}
+
+.mast-head .dotdotdot-control {
+  z-index: 11;
+  position: absolute;
+  left: 0px;
+  width: 99.1vw;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mast-head .dotdotdot-control div {
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 5px;
+}
+
+.mast-head .dotdotdot-control div:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+
+.mast-head .dotdotdot-control .activeCar {
+  background-color: #ffffff;
+}
+
+.mast-head .outer-head {
+  opacity: 1;
+  z-index: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100vw;
+  height: 80vh;
+  -webkit-animation: opacity  10s infinite alternate;
+          animation: opacity  10s infinite alternate;
+}
+
+.mast-head .outer-head:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #BF843B;
+  opacity: .7;
+}
+
+.mast-head .inner-head {
+  position: absolute;
+  bottom: 30%;
+  left: 12%;
+  background: #ffffffb9;
+  max-width: 1000px;
+  padding: 2%;
+  max-height: 400px;
+}
+
+.mast-head .inner-head h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.mast-head .inner-head span {
+  margin: 5px 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: absolute;
+  padding: 1% 0;
+  width: 300px;
+  background-color: #252636;
+}
+
+.mast-head .inner-head span:hover {
+  background-color: #212230;
+  cursor: pointer;
+}
+
+.mast-head .inner-head span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: #ffffff00;
+  padding: 1% 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: .1;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: .1;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mast-head .header-controls {
+    display: none;
+  }
+  .mast-head .inner-head {
+    left: 0;
+    width: 100%;
+  }
+  .mast-head .inner-head span {
+    left: 0;
+    margin: 0;
+    width: 150px;
+    margin-left: 15px;
+  }
+  .mast-head .inner-head span a {
+    font-size: 1.2rem;
+  }
+  .mast-head .inner-head h1 {
+    font-size: 1.9rem;
+  }
+}
+/*# sourceMappingURL=header.css.map */
